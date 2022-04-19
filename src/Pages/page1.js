@@ -1,59 +1,60 @@
-import { Text, View } from 'react-native'
-import React, { Component } from 'react'
+import React  from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
+import {BiArchive} from 'react-icons/bi'
+
 
 export const Home =()=> {
       return (
-      <View>
-        <Text>pages</Text>
-      </View>
+     <div className='App Container mx-auto mt-3 font-thin'>
+      <h1 className='bg-yellow text-5xl'>home</h1> 
+     </div>
     )
   }
   export const About =()=> {
     return (
-    <View>
-      <Text>about</Text>
+    <div>
+      <text>about</text>
       <Outlet/>
-    </View>
+    </div>
   )
 }
 export const Services =()=>{
     return (
-        <View>
-          <Text>Services</Text>
+        <div>
+          <text>Services</text>
           
-        </View>
+        </div>
       )
 }
 export const History =()=>{
     return (
-        <View>
-          <Text>History</Text>
+        <div>
+          <text>History</text>
           
-        </View>
+        </div>
       )
 }
 export const Events =()=> {
     return (
-    <View>
-      <Text>Events</Text>
-    </View>
+    <div>
+      <text>Events</text>
+    </div>
   )
 }
 export const Contacts =()=> {
     return (
-    <View>
-      <Text>contacts</Text>
-    </View>
+    <div>
+      <text>contacts</text>
+    </div>
   )
 }
 export const Error404 =()=>{
     let location= useLocation()
     return (
-        <View>
+        <div>
             <h1>ERROR 404</h1>
-          <Text>The path you entered is invalid  at {location.pathname}</Text>
+          <text>The path you entered is invalid  at {location.pathname}</text>
           
-        </View>
+        </div>
       )
 }

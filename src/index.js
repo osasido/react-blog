@@ -1,22 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { NativeBaseProvider, extendTheme } from "native-base";
+// import { NativeBaseProvider, extendTheme } from "native-base";
 import {BrowserRouter as Router} from 'react-router-dom'
 
-const theme = extendTheme({
-  config: {
-    initialColorMode: "dark",
-  },
-});
+// const theme = extendTheme({
+//   config: {
+//     initialColorMode: "dark",
+//   },
+// });
 
 ReactDOM.render(
   <React.StrictMode>
-    <NativeBaseProvider theme={theme}>
-      <Router>
+    {/* <NativeBaseProvider theme={theme}> */}
+      {/* <Router> */}
       <App />
-      </Router>
-    </NativeBaseProvider>
+      {/* </Router> */}
+    {/* </NativeBaseProvider> */}
   </React.StrictMode>,
   document.getElementById("root")
 );
